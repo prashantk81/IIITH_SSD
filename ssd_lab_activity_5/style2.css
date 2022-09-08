@@ -1,0 +1,31 @@
+.bd{
+   background-color: aliceblue;
+}
+.bt{
+    background-image: linear-gradient(to right, rgb(210, 147, 147) ,rgb(199,199,233) );
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    height: 600px;
+    transform: translate(-50%,-50%);
+    border: 2px black solid;
+}
+.roll{
+    border: 1px black solid;
+    margin: 15px;
+}
+.entry{
+    position: fixed;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ht{
+    padding-bottom: 15px;
+}
+.ll{
+    background-color: rgb(236, 42, 42);
+}
+.ls{
+    background-color: rgb(21, 224, 21);
+}

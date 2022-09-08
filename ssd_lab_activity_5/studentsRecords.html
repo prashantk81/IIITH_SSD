@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>lable</title>
+</head>
+<body class="bd">
+    <script>
+        function add(){
+        var rollno = document.getElementById('rollno').value;
+        var nameval = document.getElementById('name').value;
+        var bs=document.getElementById('content').getElementsByTagName('tbody')[0];
+        var tuple = bs.insertRow();
+        var roll = tuple.insertCell(0);
+        var name = tuple.insertCell(1);
+        roll.innerHTML = rollno;
+        name.innerHTML = nameval;
+        bs.appendChild(tuple);
+        document.getElementById('rollno').value = '';
+        document.getElementById('name').value='';
+        }
+
+        function del(){
+            var bs=document.getElementById('content').getElementsByTagName('tbody')[0];
+       bs.deleteRow(-1);
+        }
+    </script>
+<div class="bt">
+    <div class="ht">
+        <h1>Students Records</h1>
+        <input type="text" placeholder="Roll no" id="rollno">
+        <input type="text" placeholder="Name" id="name">
+        <button onclick="add()"class="ls">Add Entry</button>
+    </div>
+    <table id="content">
+        <thead>
+            <tr>
+            <th class="roll">Roll No</th>
+            <th class="roll">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            </tr>
+          </tbody>
+    </table>
+    <button onclick="del()" class="ll">Delete Entry</button>
+</div>
+
+</body>
+</html>
