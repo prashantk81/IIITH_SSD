@@ -1,0 +1,38 @@
+.main{
+    text-align: center;
+}
+.hd{
+    margin-right: 50px;
+    width: 100px;
+}
+.dropTargetDiv{
+    border: 1px solid black;
+    width: 250px;
+    margin-right: 30px;
+    padding: 5px;
+}
+.block2{
+    border: 1px solid black;
+    width: 250px;
+    padding: 5px;
+}
+.mainblock{
+    display: flex;
+}
+input{
+width: 20%;
+ padding: 7px;
+ margin: 3px 0 15px 0;
+ display: inline;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+.fd{
+    background-color: green;
+}
+.hello{
+    background-color: grey;
+}
