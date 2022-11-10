@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="limiter">
+		<div class="">
+			<div class="">
+					<span class="">
+						{{ message }}
+					</span>
+					<div class="">
+						<button class="">
+							<a class="" href="{{ url_for('login')}}">Login</a>
+						</button>
+					</div>
+					
+					<div class="">
+						<button class="">
+							<a class="" href="{{ url_for('register')}}">Register</a>
+						</button>	
+					</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
